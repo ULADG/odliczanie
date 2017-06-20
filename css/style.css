@@ -1,0 +1,35 @@
+.container {
+	width: 700px;
+	height: 400px;
+	background-color: black;
+	overflow: hidden;
+	position: absolute;
+	top: 5%;
+	left: 3%;
+}
+
+.liczby {
+	animation-name: odliczanie;
+	animation-duration: 12s;
+	animation-fill-mode: forwards;
+	animation-timing-function: steps(11);
+}
+
+.liczby div {
+	text-align: center;
+	float: right;
+	width: 700px;
+	line-height: 400px;
+	font-size: 100px;
+	font-family: Verdana;
+	color: white;
+}
+
+@keyframes odliczanie {
+	0% {
+		margin-right: 0px;
+	}
+	100% {
+		margin-right: -7700px;
+	}
+}
